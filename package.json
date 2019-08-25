@@ -10,7 +10,10 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "element-ui": "^2.11.1",
+    "js-base64": "^2.5.1",
+    "js-md5": "^0.7.3",
     "vue": "^2.6.10",
+    "vue-json-viewer": "^2.2.1",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },

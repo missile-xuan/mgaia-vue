@@ -3,10 +3,10 @@
 
     <!-- 头部 -->
     <el-header class="header">
-      <el-menu class="el-menu-demo" :default-active="activeIndex" mode="horizontal" router=true @select="handleSelect">
-        <el-menu-item index="1" route="/">首页</el-menu-item>
-        <el-menu-item index="2" route="/about">工具</el-menu-item>
-        <el-menu-item index="3">ToDoList</el-menu-item>
+      <el-menu class="el-menu-demo" :default-active="activeIndex" mode="horizontal" router @select="handleSelect">
+        <el-menu-item index="/">首页</el-menu-item>
+        <el-menu-item index="/tools">工具</el-menu-item>
+        <el-menu-item index="/about">ToDoList</el-menu-item>
       </el-menu>
     </el-header>
 
@@ -18,18 +18,24 @@
   </el-container>
 </template>
 <script>
-   export default {
-    data() {
-      return {
-        activeIndex: '1'
-      };
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      }
+export default {
+  data () {
+    return {
+      activeIndex: this.$route.path
     }
+  },
+  methods: {
+    handleSelect (key, keyPath) {
+      console.log(key, keyPath)
+      console.log(key)
+      console.log(keyPath)
+      console.log(this.$route.path)
+    }
+  }, 
+  computed: {
+    // 计算属性的 getter
   }
+}
 </script>
 <style lang="stylus">
 #app
