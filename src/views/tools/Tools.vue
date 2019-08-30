@@ -3,7 +3,7 @@
 <el-aside width="200px">
   <el-col :span="24" style="height: 100%">
     <!-- <h5>默认颜色</h5> -->
-    <el-menu :default-active="activeIndex" router @select="toolsSelect">
+    <el-menu :default-active="activeIndex" router >
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-monitor"></i>
@@ -12,6 +12,7 @@
         <el-menu-item index="/tools/base64">Base64转码工具</el-menu-item>
         <el-menu-item index="/tools/jsonformat">json格式化</el-menu-item>
         <el-menu-item index="/tools/tomd5">MD5加密</el-menu-item>
+        <el-menu-item index="/tools/test">测试</el-menu-item>
 
         <el-menu-item-group>
           <template slot="title">分组一</template>
@@ -72,6 +73,5 @@ export default {
   computed: {
 	  // 计算属性的 getter
 	}
-
 }
 </script>

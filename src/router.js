@@ -30,7 +30,8 @@ export default new Router({
       children: [
         { path: 'base64', component: () => import('./views/tools/components/Base64.vue')},
         { path: 'jsonformat', component: () => import('./views/tools/components/JsonFormat.vue')},
-        { path: 'tomd5', component: () => import('./views/tools/components/ToMD5.vue')}
+        { path: 'tomd5', component: () => import('./views/tools/components/ToMD5.vue')},
+        { path: 'test', component: () => import('./views/tools/components/test.vue')}
       ]
     }
   ]
