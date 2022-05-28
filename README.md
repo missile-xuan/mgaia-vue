@@ -1,6 +1,6 @@
 # mgaia-vue
 <p align="center">
-  <a href="https://github.com/benx1n/HikariBot"><img src="https://s2.loli.net/2022/05/27/6lsND3dA5GxQjMg.png" alt="Hikari " style="width:200px; height:200px; border-radius:100%;" ></a>
+  <a href="https://github.com/benx1n/HikariBot" style=" border-radius:100%;"><img src="https://s2.loli.net/2022/05/27/6lsND3dA5GxQjMg.png" alt="Hikari " style="width:200px; height:200px;" ></a>
 </p>
 
 ## Project setup
